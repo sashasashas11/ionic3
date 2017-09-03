@@ -1,11 +1,17 @@
 import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-hello-ionic',
   templateUrl: 'hello-ionic.html'
 })
 export class HelloIonicPage {
-  constructor() {
+  tab1Root: any;
+  tab2Root: any;
+
+  constructor(public navCtrl: NavController) {
+    this.tab1Root = 'TestTab2Page';
+    this.tab2Root = 'TestTabPage';
 
   }
 }
